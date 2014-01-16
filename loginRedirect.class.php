@@ -12,7 +12,7 @@ class loginRedirect extends XCube_ActionFilter
 	}
 	function preBlockFilter()
 	{
-		$this->mRoot->mDelegateManager->add("Site.CheckLogin.Success”, array(&$this, ‘loginSuccessRedirect’));
+		$this->mRoot->mDelegateManager->add("Site.CheckLogin.Success", array(&$this,'loginSuccessRedirect'));
 
 	
 	}
